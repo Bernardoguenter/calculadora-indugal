@@ -94,9 +94,9 @@ const App = () => {
     }
 
     if (material === "Perfil U Ángulo") {
-      precioPorMetro += 10;
+      precioPorMetro += 9;
     } else if (material === "Alma Llena") {
-      precioPorMetro += 30;
+      precioPorMetro += 27;
     }
 
     //CALCULAR COLUMNAS
@@ -104,10 +104,11 @@ const App = () => {
     const totalColumnas = numColumnasLargo * 2;
     const precioColumna =
       material === "Hierro Torsionado"
-        ? 38
+        ? 35 //Acá se cambió (anterior 38)
         : material === "Perfil U Ángulo"
-        ? 76
-        : 160;
+        ? 69 // Acá se cambió (anterio  76)
+        : 144; //Acá se cambió (anterior 160);
+
     const costoColumnas =
       alto === 5
         ? 0
